@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Kevin Ortiz / PortFolio</title>
+    <link rel="stylesheet" type="text/css" href="css/Accueil.css">
+    <link rel="stylesheet" href="css/Pied-Page-Accueil.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  </head>
+  <body>
+
+    <!---------------Contenu de l'accueil-------------->
+    <header>
+      <a class="logo">Kevin ORTIZ</a>
+      <ul>
+        <li><a href="#" class="active">Accueil</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+    <section>
+      <img src="img/stars.png" id="stars">
+      <img src="img/moon.png" id="moon">
+      <img src="img/mountains_behind.png" id="mountains_behind">
+      <h2 id="text">Mon PortFolio</h2>
+      <a href="Page-Principale.html" id="btn">Explorer</a>
+      <img src="img/mountains_front.png" id="mountains_front">
+      <div class="content">
+    </section>
+    <div class="sec" id="sec">
+      <h2>Bonjour, Je m'appelle Kevin ORTIZ</h2>
+      <p>Je prépare un BTS SIO spécialité SISR, je suis âgé de 21 ans, je suis 
+        actuellement à l’école ESIEE-IT, 
+        en première année de BTS SIO spécialité SISR, Services informatiques aux organisation 
+        spécialisé en Solutions d’infrastructure, Système et Réseaux. Depuis mes jeunes années, 
+        j’ai toujours été attiré par l’informatique et les nouvelles technologies. 
+        C’est tout naturellement que je me suis tourné vers ces deux années d’études 
+        en BTS Services Informatiques aux Organisations spécialité en Solutions 
+        d'Infrastructure, Systèmes et Réseaux.</p>
+        
+        <a href="" class="btn">Téléchager mon CV <i class="fas fa-download"></i></a>
+        <a href="" class="btn">Contactez moi  <i class="fas fa-arrow-circle-right"></i></a>
+
+<br><br>
+        <h2>Ma formation</h2>
+        <p>Le BTS SIO (Services Informatiques aux Organisations), créé pour la rentrée 2011, 
+          forme les étudiants à la mise en place de solutions informatiques au sein des entreprises. 
+          Il comprend deux options : la spécialité « SLAM » Solutions Logicielles et Applications 
+          Métiers et la spécialité « SISR » Solutions d’Infrastructure, Systèmes et Réseaux.</p>
+
+<br><br>
+          <h2>Ma spécialité</h2>
+          <p>Le diplômé du BTS SIO Spécialité ''Solutions d’Infrastructures, Systèmes et Réseaux'', à 
+            la différence de la spécialité Solution logicielles et Applications Métiers, va être formé 
+            pour devenir un technicien capable de gérer un parc informatique ou d’administrer un réseau 
+            en PME. Leur mission consiste à automatiser et rationnaliser les activités administratives 
+            de l’entreprise.</p>
+
+<br><br>
+          <h2>Mes Certifications</h2>
+          <div class="content">
+            <div class="portfolio-list">
+  
+              <div class="img-card-container">
+                <div class="img-card">
+                  <div class="overlay"></div>
+                  <div class="info">
+                    <h3>Attestation SecNumAcadémie</h3>
+                    <span>ANSSI</span>
+                    <p>Fait le 1 Juin 2022</p>
+                  </div>
+                  <img src="img/ANSSI.jpg" alt="">
+                </div>
+                </div>
+              </div>
+
+              <div class="img-card-container">
+                <div class="img-card">
+                  <div class="overlay"></div>
+                  <div class="info">
+                    <h3>Protection du secret de défense nationale</h3>
+                    <span>DRSD</span>
+                    <p>Fait le 4 Juillet 2022</p>
+                  </div>
+                  <img src="img/DRSD.jpg" alt="">
+                </div>
+                </div>
+              </div>
+      
+    </div class="sec">
+
+    <!------------Animations des montagnes------------->
+    <script type="text/javascript">
+      let moon = document.getElementById('moon');
+      let stars = document.getElementById('stars');
+      let mountains_behind = document.getElementById('mountains_behind');
+      let mountains_front = document.getElementById('mountains_front');
+      let text = document.getElementById('text');
+      let btn = document.getElementById('btn');
+      let header = document.querySelector('header');
+      window.addEventListener('scroll', function() {
+        var value = window.scrollY;
+        moon.style.top = -value * -1.05 + 'px';
+        stars.style.left = value * 0.25 + 'px';
+        mountains_behind.style.top =-value * -0.5 + 'px';
+        header.style.top =-value * -0.5 + 'px';
+        mountains_front.style.top =-value * 0 + 'px';
+        text.style.marginTop = value * 1.5 + 'px';
+        btn.style.marginTop = value * 1.5 + 'px';
+        text.style.marginRight = value * 4 + 'px';
+      });
+    </script>
+  </body>
+
+<!--========Pied de page========-->
+<footer>
+  <div class="footer-container">
+    <div class="about group">
+      <h2>Kevin</h2>
+      <p>Technicien informatique</p>
+      <a href="#about">A Propos de moi</a>
+    </div>
+    <div class="hr"></div>
+    <div class="info group">
+      <h3>Plus +</h3>
+      <ul>
+        <li><a href="#skills">Mon Parcours</a></li>
+        <li><a href="#services">Entreprise</a></li>
+        <li><a href="#portfolio">Veille Technologique</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="hr"></div>
+    <div class="follow group">
+      <h3>Suivez-moi</h3>
+      <ul>
+        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin"></i></a></li> 
+      </ul>
+    </div>
+  </div>
+  <div class="footer-copyright group">
+    <p>© Copyright  2022 Tout Droit Réservé par Kevin Ortiz.</p>
+  </div>
+</footer>
+
+</html>
